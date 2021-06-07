@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>html</title>
+<style>
+*{margin:0; padding:0;}
+.wrap{
+	height:500px;
+	background-color:orange;
+	width:960px;
+	margin:50px auto;
+}
+.wrap::after {
+	content:'';
+	display:inline-block;
+	clear:both;
+}
+.wrap div{
+	width:320px;
+	float:left;
+}
+.wrap .box{
+	border:1px solid gray;
+	height:100%;
+	text-align:center;
+	box-sizing:border-box;
+	/**테두리, 패딩값을 포함하여 지정한 사이즈 설정**/
+}
+.wrap .box h2{
+	margin-top: 100px;
+	font-size:40px;
+}
+.wrap .box p{
+	margin: 20px 30px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div>
+	<img src="img/img02.jpg" alt="샐러드/">
+</div>
+<div>
+	<img src="img/img03.jpg" alt="샐러드/">
+</div>
+<div class="box">
+	<h2>lunch</h2>
+	<p>lunch looks better comfortable place</p>
+</div>
+</div>
+</body>
+
+</html>

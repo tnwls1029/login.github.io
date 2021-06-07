@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디저트카페</title>
+    <style>
+        @font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{
+            text-decoration: none;
+            color:#333;
+            display:block;
+        }
+        .box{
+            width: 600px;
+            height: 900px;
+            background: url('img/img02.jpg')center center / cover no-repeat;
+        }
+        
+        .box .box_in{
+            padding: 120px 82px;
+            position: relative;
+            height: 100%;
+            box-sizing: border-box;
+            z-index: 5;
+            display: none;
+            
+        }
+        
+        .box .box_in::before{
+            content:'';
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            display: block;
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index: -1;
+            
+        }
+
+        .box_in p{
+            font-size: 25px;
+            background-color:gold;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .box_in h3{
+            font-family: 'TmonMonsori';
+            font-size: 92px;
+            color: #fff;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+        .box_in h3 span{
+            letter-spacing: 7px;
+            color:wheat;
+        }
+        .box:hover .box_in{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box_in">
+            <p>#인스타를 달군 대세 카페</p>
+            <h3>
+                디저트카페 <br />
+            <span>BEST 10</span>
+            </h3>
+        </div>
+    </div>
+</body>
+</html>

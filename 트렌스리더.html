@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin::0; padding:0;}
+        li{list-style:none;
+    }
+    a{
+        text-decoration: none;
+        color:#333;
+        display: block;
+    }
+    .box_x, .box_y, .box_xy{
+        width: 600px;
+        height: 350px;
+        border: 1px solid #000;
+        margin:30px;
+        overflow: hidden;
+    }
+    img{
+        width: 100%;
+        transition:1s;
+    }
+    .box_x:hover img{
+        transform: translateX(100px);
+    }
+
+    .box_y:hover img{
+        transform: translateY(100px);
+    }
+    .box_xy:hover img{
+        transform: translate(100px, 200px);
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- transform : 회전, 기울기, 크기조절, 이동 -->
+    <!-- transform : translate x축 또는 y축 으로 이동 -->
+    <div class="box_x box">
+        <img src="img/flower.JPG" alt="안개꽃"/>
+    </div>    
+
+    <div class="box_y">
+        <img src="img/flower.JPG" alt="안개꽃"/>
+    </div>    
+
+    <div class="box_xy">
+        <img src="img/flower.JPG" alt="안개꽃"/>
+    </div>    
+</body>
+</html>

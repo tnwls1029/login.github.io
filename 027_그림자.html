@@ -1,0 +1,71 @@
+<DOCTYPE html>
+    <html lang="ko">
+    <head>
+    <meta charset="uft-8">
+    <title>그림자</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none; color:#333; display:block;}
+
+        .box dl{
+            width: 300px;
+            border: 1px solid red;
+            text-align:center;
+            padding: 50px;
+            display:inline-block;
+            margin:30px;
+        }
+        /* 그림자: x축 y축 흐림 컬러*/
+
+        .box dl{
+            box-shadow: 10px 10px 5px black;
+            /*그림자 : x축y축 흐림 그림자크기 컬러*/
+        }
+        .box dl:first-child{
+            box-shadow:10px 10px red,10px 10px red;}
+
+        .box dl:nth-child(2){
+            box-shadow:10px 10px 5px red;
+        }
+        .box dl:nth-child(3){
+            box-shadow:10px 10px 5px 5px red;
+        }
+
+        .box dl:last-child{
+            box-shadow:inset 10px 10px 5px red;
+        }
+
+            /* 
+            첫번째자식: first-child = nth-child(1)
+            두번째부터 nth-child(2)
+            n번째자식 nth-child(n)
+            마지막자식 last-child
+             */
+        }
+    </style>
+    </head>
+    <body>
+        <div class="box">
+            <dl>
+                <dt>title</dt>
+                <dd>box-shadow:박스 그림자</dd>
+            </dl>
+    
+            <dl>
+                <dt>title</dt>
+                <dd>box-shadow:박스 그림자</dd>         
+            </dl>
+                
+            <dl>
+                <dt>title</dt>
+                <dd>box-shadow:박스 그림자</dd>
+            </dl>
+    
+            <dl>
+                <dt>title</dt>
+                <dd>box-shadow:박스 그림자</dd>
+            </dl>
+        </div><!-- box end -->
+    </body>
+    </html>

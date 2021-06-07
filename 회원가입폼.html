@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼만들기ㅏ</title>
+    <link href="css/050.css" rel="stylesheet">
+</head>
+<body>
+    <div id="form">
+        <form action="" method="POST" autocomplete="off">
+            <h2>회원가입양식</h2>
+            <fieldset>
+                <legend>개인정보</legend>
+                <div>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="이름을 입력해주세요">
+                    <!-- 
+                        id는 문서 안에서 중복사용 불가
+                    자바스크립트 프로그램 안에서 적용시키기 위해 사용 -->
+                </div>
+                <div>
+                    <label for="pw">비밀번호</label>
+                    <input type="password" id="pw" placeholder="비밀번호입력">
+                </div>
+                <div class="address">
+                    <label>주소</label>
+                    <input type="button" value="주소찾기">
+                    <input type="text" name="addr" id="addr1">
+                    <input type="text" name="addr" >
+                </div>
+                <div>
+                    <label>성별</label>
+                    <input type="radio" name="gender" value="men"><span>남자</span>
+                    <input type="radio" name="gender" value="woman"><span>여자</span>
+                </div>
+                <!-- 
+                    name : 그룹 묶음 사용, 프로그램쪽에서 name값을 가져올수있음
+                    value :해당하는 태그의값
+
+                    *name :그린컴퓨터아카데미
+                    *vlaue : 501호
+
+                    type="radio" : 1가지선택
+                    type="checkbox" : 다중선택(1개이상)
+
+
+                 -->
+                <div class="drank">
+                    <label>음료</label>
+                    <div>
+                            <input type="checkbox" name="drank" value="coffee">
+                            <label for="coffee">커피</label> 
+                  <!--       
+
+                      <input type="checkbox">
+                        <span>커피</span> -->
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="drank" value="icetea">
+                        <label>아이스티</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="drank" value="latte">
+                        <label>라떼</label>
+                    </div>
+                </div>
+
+                    <div>
+                        <label>기타의견</label>
+                        <textarea rows="5" cols="40"></textarea>
+                    </div>
+                    <div>
+                        <label>가입경로</label>
+                        <select>
+                            <option>검색</option>
+                            <option>카카오</option>
+                            <option>인스타그램</option>
+                            <option>기타</option>
+                            <optgroup label="검색경로">
+                                <option>네이버</option>
+                                <option>다음</option>
+                                <option>구글</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="button">
+                        <input type="reset" value="다시쓰기">
+                        <input type="submit" value="가입하기">
+                        <!-- 
+                            reset : 취소, 다시쓰기
+                            submit : 동의, 제출, 확인
+                            button : 그냥버튼
+                         -->
+                    </div>
+
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>

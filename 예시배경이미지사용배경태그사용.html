@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃만들기02</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration: none; color: dimgray; display:block;}
+
+    .bg{
+        background:url('img/flower.JPG')center
+        center / cover no re
+    }
+    .bg p{
+        font-size:50px;
+        text-align:center;
+        line-height:700px;
+    }
+
+    /*이미지태그사용*/
+.img_bg{
+    margin-top:100px;
+    position:relative;
+    height:700px;
+    overflow: hidden;
+    
+}
+.img_bg img{
+    width:100%;
+}
+.img_bg p{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size: 50px;
+
+}
+</style>
+</head>
+<body>
+    <div class="bg">
+        <p>main_visual</p>
+    </div><!-- .bg end -->
+    <div class="img bg">
+        <img src="img/flower.jpg" alt="안개꽃"/>
+        <p>main_visual</p>
+    </div><!-- .img_bg end -->
+    
+</body>
+</html>

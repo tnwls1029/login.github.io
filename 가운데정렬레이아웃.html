@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가운대정렬레이아웃</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration: none; color: dimgray; display:block;}
+        .header h1{
+            text-align:center;
+            border-bottom: 1px solid black;
+            padding:15px 0;
+        }
+
+        .header ul{
+            text-align: center;
+            height:80px;
+            line-height: 80px;
+        }
+
+        .header ul li{
+            display: inline-block;
+            margin: 0 40px;
+        }
+
+        .main_visual{
+            width: 100%;
+            height: 400px;
+            background-color:darkgrey;
+            text-align: center;
+        }
+        .main_visual h2{
+            font-size:45px;
+            padding-top:100px;
+        }
+
+        .main_visual p{
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            background-color: lightseagreen;
+            margin: 0 auto;
+            margin-top:30px;
+            color:linen;
+        }
+
+        .sec01{
+            background-color:lightseagreen;
+            padding:100px 0;
+        }
+        .sec01_in{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .sec01_in::after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+
+        .sec01_in div{
+            float:left;
+            width:590px;
+            border: 1px solid #fff;
+            margin-right:20px;
+            box-sizing: border-box;
+        }
+        .sec01_in div:last-child{
+            margin-right:0;
+        }
+        .sec01_in dl{
+            text-align: center;
+            color:#fff;
+            padding:20px 0;
+        }
+        .sec01_in dl dt{
+            font-size:25px;
+            font-weight:bold;
+            margin-bottom: 15px;
+        }
+        .sec01_in dl dd{
+            font-size:18px;
+        }
+
+
+        .sec02{
+            padding: 100px 0;
+        }
+        .sec02 h3{
+            font-size: 40px;
+            text-align: center;
+        }
+        .sec02_in{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .sec02_in::after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .sec02_in div{
+            float:left;
+            margin-right:20px;
+        }
+        .sec02_in div:last-child{
+            margin-right:0;
+        }
+
+        .sec02_in dl{
+            text-align: center;
+            background-color: lightseagreen;
+            color:#fff;
+            padding:20px 0;
+        }
+        .sec02_in img{
+            display: block;
+        }
+        .sec02_in dl dt{
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom:15px;
+        }
+        .sec02_in dl dd{
+            font-size:18px;
+        }
+
+        .footer{
+            height:80px;
+            line-height: 80px;
+            text-align: center;
+            background-color:maroon;
+            color:mintcream
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LOGO</h1>
+        <ul>
+            <li>ABOUTME</li>
+            <li>HOME</li>
+            <li>SHOP</li>
+            <li>CONTACT</li>
+        </ul>
+    </div><!-- .header end -->
+
+    <div class="main_visual">
+        <h2>메인비주얼<br />
+        적용되는 영역<br />
+        관련안내글</h2>
+        <p>자세히보기</p>
+    </div><!-- .main_wisual end -->
+
+    <div class="sec01">
+        <div class="sec01_in">
+                <div>
+                    <img src="http://via.placeholder.com/590x550" alt="이미지01"/>
+                    <dl>
+                        <dt>상품소개</dt>
+                        <dd>상품소개상세설명</dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <img src="http://via.placeholder.com/590x550" alt="이미지01"/>
+                    <dl>
+                        <dt>상품소개</dt>
+                        <dd>상품소개상세설명</dd>
+                    </dl>
+                 </div>
+        </div><!-- /sec01_in end -->
+    </div><!-- .sec01 end -->
+
+
+    <div class="sec02">
+        <h3>두번째 섹션 제목</h3>
+        <div class="sec02_in">
+            <div>
+                <img src="http://via.placeholder.com/386x450" alt="이미지"/>
+                <dl>
+                    <dt>상품소개 설명</dt>
+                    <dd>상품소개 상세설명</dd>
+                </dl>
+            </div>
+
+            <div>
+                <img src="http://via.placeholder.com/386x450" alt="이미지"/>
+                <dl>
+                    <dt>상품소개 설명</dt>
+                    <dd>상품소개 상세설명</dd>
+                </dl>
+            </div>
+
+            <div>
+                <img src="http://via.placeholder.com/386x450" alt="이미지"/>
+                <dl>
+                    <dt>상품소개 설명</dt>
+                    <dd>상품소개 상세설명</dd>
+                </dl>
+            </div>
+        </div><!-- .sec02_in end -->
+    </div><!-- .sec02 end -->
+    
+    <div class="footer">
+         FOOTER INFO
+    </div>
+</body>
+</html>

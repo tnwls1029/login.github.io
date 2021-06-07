@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{margin:0; padding:0;}
+        li{
+            list-style:none;
+        }
+        a{
+            text-decoration: none;
+            color:#333;
+            display: block;
+        }
+        .cont02{
+            background-color: cornflowerblue;
+            padding:100px 0;
+            text-align: center;
+        }
+        .cont02 h3{
+            color: #fff;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+        .cont02 article{
+            display: inline-block;
+            width: 370px;
+            /* text-align: center; */
+            margin: 0 40px;
+        }
+        .cont02 article:hover img{
+            transform: rotateY(360deg);
+        }
+        .cont02 article img{
+            border-radius: 50%;
+            border:2px solid #000;
+            transition: .3s;
+        }
+        .cont02 article p{
+            color:#fff;
+            margin-top: 20px;
+        }
+        .img{
+            width: 400px;
+            height: 400px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .img img{
+            /* border-radius: 50%; */
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="cont02">
+        <h3>hot contents</h3>
+        <div>
+            <article>
+                <img src="http://via.placeholder.com//200" alt="이미지"/>
+                <p>ddddddddf eeeeeeeeee hghhhhhhhhhhh eeeeeeeeee vvvvvvvvv hews rrrrrrrrrrrrrybfdbshrhshrhyhxr</p>
+            </article>
+
+            <article>
+                <img src="http://via.placeholder.com//200" alt="이미지"/>
+                <p>ddddddddf eeeeeeeeee hghhhhhhhhhhh eeeeeeeeee vvvvvvvvv hews rrrrrrrrrrrrrybfdbshrhshrhyhxr</p>
+            </article>
+
+            <article>
+                <img src="http://via.placeholder.com//200" alt="이미지"/>
+                <p>ddddddddf eeeeeeeeee hghhhhhhhhhhh eeeeeeeeee vvvvvvvvv hews rrrrrrrrrrrrrybfdbshrhshrhyhxr</p>
+            </article>
+        </div>
+    </section>
+
+    <div class="img">
+        <img src="img/img02.jpg" alt="샐러드"/>
+    </div>
+</body>
+</html>

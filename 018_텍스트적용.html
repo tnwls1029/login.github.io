@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>텍스트적용</title>
+<style>
+*{margin:0; padding:0;}
+div{
+width:800px;
+padding:10px;
+background-color:#FDA29D;
+margin: 10px auto;
+}
+.align .a01{text-align:left;}
+.align .a02{text-align:center;}
+.align .a03{text-align:right;}
+.align .a04{writing-mode: vertical-lr;}
+/**vertical-lr 세로로작성 **/
+
+
+.color {background-color: #FC5951;}
+.color .c01 {color: white;}
+.color .c02 {color: #ffffff;}
+.color .c03 {color: rgb(255, 255, 255);}
+.color .c04 {color: rgba(255, 255, 255, 1)} /**rgba값에서 제일 끝에 있는수치는 0~1까지 투명도 조절하는거임**/
+
+.letter{background-color:#D0BE6A;}
+.letter .l01 {letter-spacing: -5px;}
+.letter .l02 {letter-spacing: 5px;}
+
+.word{background-color:#C7A200;}
+.word .w01{word-spacing:-5px;}
+.word .w02{word-spacing:7px;}
+
+.line{background-color:#94760C;}
+
+.line p{
+line-height: 2;
+/**글자 기본 크기 16px
+글자간격 : 1.5~2;
+16 * 1.5 =24px;
+line-height : 24px
+line-height : 1.5;
+**/
+}
+
+</style>
+</head>
+<body>
+<div class="align">
+  <h6>text-align : 텍스트 수평 방향 정렬 설정</h6>
+<p class="a01">left</p>
+<p class="a02">center</p>
+<p class="a03">right</p>
+<p class="a04">세로로작성</p>
+</div><!--.align end-->
+
+<div class="color">
+<h6>color: 텍스트 컬러 설정</h6>
+<p class="c01">컬러이름</p>
+<p class="c02">16진수 = HEX</p>
+<p class="c03">rgb</p>
+<p class="c04">rgba</p>
+</div>
+<div class="letter">
+<h6>letter-spacing:택스트 내에서 문자 사이의 간격을 설정함.</h6>
+<p class="l01">
+letter-spacing:택스트 내에서 문자 사이의 간격을 설정함.
+</p>
+<p class="l02">
+letter-spacing:택스트 내에서 문자 사이의 간격을 설정함.
+</p>
+</div><!__.letter end__>
+
+<div class="word">
+<h6>word-spacing: 텍스트 내에서 단어 사이의 간격을 설정함.</h6>
+<p class="w01">word-spacing: 텍스트 내에서 단어 사이의 간격을 설정함.</p>
+<p class="w02">word-spacing: 텍스트 내에서 단어 사이의 간격을 설정함.</p>
+</div>
+
+<div class="line">
+<h6>line-height: 텍스트의 줄 간격을 설정함</h6>
+<p>line-height: 텍스트의 줄 간격을 설정함</p>
+<p>line-height: 텍스트의 줄 간격을 설정함</p>
+<p>line-height: 텍스트의 줄 간격을 설정함</p>
+</div><!__.line end__>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

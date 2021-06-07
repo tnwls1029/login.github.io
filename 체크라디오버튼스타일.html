@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크라디오버튼 스타일변경</title>
+    <style>
+        .check input[type="checkbox"]{
+            display: none;
+        }
+        .check input[type="checkbox"]+label{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .check input[type="checkbox"]:checked+label{
+            background-color: royalblue;
+            border: 1px solid royalblue;
+        }
+        .check{
+            position: relative;
+        }
+        .check span{
+            position: absolute;
+            top:0;
+            left:28px;
+        }
+
+        .radio input[type="radio"]{
+            display:none;
+        }
+        .radio input[type="radio"]+label{
+            display: inline-block;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            border: 2px solid #ddd;
+            text-align: center;
+        }
+        .radio input[type="radio"]:checked+label{
+            border: 2px solid rosybrown;
+        }
+    </style>
+</head>
+<body>
+    <div class="check">
+        <input type="checkbox" id="ch" name="" value="">
+        <label for="ch">
+            <span>체크박스</span>
+        </label>
+    </div><!-- .check end -->
+
+    <div class="radio">
+        <input type="radio" id="ra" name="gender" value="man">
+        <label for="ra">남자/여자</label>
+
+        <input type="radio" id="ra01" name="gender" value="woman">
+        <label for="ra01">남자/여자</label>
+    </div>
+</body>
+</html>

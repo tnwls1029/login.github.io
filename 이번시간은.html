@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스정렬_그림자</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a {text-decoration:none; color: #333; display: block;}
+
+        .section{
+            width: 1200px;
+            /* background-color: rosybrown; */
+            margin: 0 auto;
+            }
+
+        .section::after{
+            content:'';
+            display:block;
+            clear: both;
+        }
+
+        h2{
+            text-align:center;
+            font-size:40px;
+            margin-bottom:40px;
+        }
+
+        .section div{
+            width:285px;
+            background-color: sandybrown;
+            float: left;
+            margin-right:20px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 0px 18px black;
+        }
+        .section div:last-child{margin-right:0;}
+
+        .section div img{
+            width:100%;
+        }
+        .section div dl{
+            margin:20px;
+        }
+        .section div dl dt{
+            font-size: 24px;
+            font-weight: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h2>박스정렬 + 그림자</h2>
+    <div class="section">
+    <div>
+        <img src="img/flower.JPG" alt="안개꽃">
+        <dl>
+            <dt>title</dt>
+            <dd>Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse</dd>
+        </dl>
+    </div>
+
+    <div>
+        <img src="img/flower.JPG" alt="안개꽃">
+        <dl>
+            <dt>title</dt>
+            <dd>Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse</dd>
+        </dl>
+    </div>
+
+    <div>
+        <img src="img/flower.JPG" alt="안개꽃">
+        <dl>
+            <dt>title</dt>
+            <dd>Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse</dd>
+        </dl>
+    </div>
+
+    <div>
+        <img src="img/flower.JPG" alt="안개꽃">
+        <dl>
+            <dt>title</dt>
+            <dd>Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse</dd>
+        </dl>
+    </div>
+</div>
+</body>
+</html>

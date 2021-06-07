@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>html</title>
+<style>
+*{margin:0; padding:0;}
+div{margin: 20px;}
+.box{
+	width:200px;
+	height:200px;
+	background-color:orange;
+	padding:20px;
+	box-sizing:border-box;
+	/**여백포함 200px이 되기 위해서는 box-sizing:border-box 	적용
+	padding 뿐만아니라 테두리 포함해서 설정값 유지**/
+}
+/**
+margin:0 auto; 를 이용해서 중앙정렬 하기위해서는 block요소이고 width값이 있을 때 적용
+가로값이 설정되어 있기 때문에 text-align:center 해도 위치할 영역이 없음
+**/
+/**text-align:center를 이용하여 중앙정렬 inline요소가 포함되어 있을 때 부모에게 text-align:center 적용
+inline은 자기 영역만 가지고 있으면서 가로배열이 이루어짐
+**/
+p{
+width:120px;
+height:80px;
+line-height:80px;
+background-color:#ffcc00;
+text-align:center;
+margin:0 auto;
+}
+.margin{
+width:800px;
+background-color: black;
+}
+.text {
+text-align:center;
+width: 1000px;
+background-color:red;
+}
+.text p {
+display:lnline-block;
+}
+</style>
+</head>
+<body>
+<div class="box">설정값에 맞춰서 여백 적용</div>
+<div class="margin">
+	<p>margin box</p>
+</div>
+<div class="text">
+	<p>가로정렬01</p>
+	<p>가로정렬02</p>
+	<p>가로정렬03</p>
+	<p>가로정렬04</p>
+</div>
+</body>
+
+
+
+
+</html>

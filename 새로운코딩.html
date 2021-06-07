@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style: none;}
+        a{
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        nav{
+            height: 100px;
+            border: 1px solid #000;
+        }
+
+        .cont{
+            border: 1px solid #000;
+            margin-top: 10px;
+        }
+
+        .inline-block{
+            display: inline-block;
+        }
+        .cont >div >div {
+            width: 200px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            background-color: darksalmon;
+        }
+        .cont .sidebar{
+            height: 2000px;
+        }
+        .sidebar .static{
+            background-color: darkseagreen;
+            position: static;
+            top:0;
+
+        }
+        .sidebar .fixed{
+            background-color: indianred;
+            position: fixed;
+            top:112px;
+            left: 410px;
+        }
+        .sidebar .sticky{
+            background-color: khaki;
+            position: sticky;
+            top:0;
+        }
+
+        /*
+        position:sticky 가 적용되지 않을때
+        부모, 조상에 overflow속성이 있을 때 동작하지 않음
+        overflow : hidden;
+        overflow : scroll;
+        overflow : auto;
+        ----------------------------------------------------------
+        부모에게 height 값이 있어야 설정가능
+        height: %값이면 동작하지 않음
+        height: auto;
+        height: unset;
+        height: 100vh;
+        height: 1000px;
+        height: 5em;
+        */
+    </style>
+</head>
+<body>
+    <!-- 
+        static:기본값
+     -->
+     <nav>네비게이션</nav>
+     <div class="cont">
+        <div class="sidebar">
+            <div class="inline-block static">static </div>
+            <div class="inline-block fixed">fixed</div>
+            <div class="inline-block sticky">sticky</div>
+        </div><!-- .sidebar end -->
+     </div><!-- .cont end -->
+</body>
+</html>

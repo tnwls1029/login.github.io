@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>charset</title>
+<style>
+*{margin:0; padding:0;}
+/*.wrap {overflow:hidden;}*/
+.wrap::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.wrap div{
+	height:300px;
+	float: right; 
+	/**정렬:좌측정렬,우측정렬
+	float:left;
+	float:right
+	**/
+}
+.wrap div img{
+	height:100%;
+}
+/*p{clear:both;}*/
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<div>
+	<img src="img/img_01.jpg" alt="산위에 앉아있는 여자"/>
+</div>
+<div>
+	<img src="img/img01.jpg" alt="아보카도"/>
+</div>
+</div>
+<p>반응형웹디자인 금요일 오후2시 40분</p>
+</body>
+
+
+
+
+</html>

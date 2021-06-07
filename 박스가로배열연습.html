@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>박스가로배열연습</title>
+<style>
+*{margin:0; padding:0;}
+html, body {height:100%;}
+.top{
+	background-color: #333;
+	height:100%;
+	text-align:center;
+}
+
+.top div{
+	background-color: #fff;
+	width:350px;
+	height:450px;
+	margin-bottom:20px;
+	padding:30px 10px;
+	text-align:center;
+	border-radius:30px;
+	display:inline-block;
+	margin-top:100px;
+}
+dl dt{
+	font-size:30px;
+	font-weight:bold;
+	margin:10px 0;
+}
+
+dl dd{
+	font-size:17px;
+	/**타이틀 제외하고 기본 16px**/
+}
+.top div: hover{
+	background-color:orange;
+}
+.top div: hover dl dt {color: #fff;}
+</style>
+</head>
+<body>
+<div class="top">
+	<div>
+	<img src="img/icon01.png" alt="커피아이콘"/>
+	<dl>
+		<dt>Cafe</dt>
+		<dd>coffee is my must-have accessory</dd>
+	</dl>
+	</div>
+
+	<div>
+	<img src="img/icon01.png" alt="커피아이콘"/>
+	<dl>
+		<dt>Cafe</dt>
+		<dd>coffee is my must-have accessory</dd>
+	</dl>
+	</div>
+
+	<div>
+	<img src="img/icon01.png" alt="커피아이콘"/>
+	<dl>
+		<dt>Cafe</dt>
+		<dd>coffee is my must-have accessory</dd>
+	</dl>
+	</div>
+</div>
+
+</body>
+</html>

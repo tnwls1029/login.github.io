@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>html</title>
+<style>
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration:none; color:#333;}
+.nav02 li {
+	display:inline-block;
+	background-color:#6370E6;
+	width: 150px;
+	height: 50px;
+	text-align:center;
+	line-height:50px;
+}	
+.nav02 li a{
+	background-color: #ff0000;
+	display:block;
+	color: #fff;
+}
+div{
+	height: 1000px;
+	background-color: tan;
+	margin-top: 20px;
+}
+
+#m04{
+background-color: #686E3D;
+}
+
+
+
+</style>
+
+</head>
+<body>
+<!--외부링크-->
+<a href="http://www.naver.com" target="_blank" title="네이버로 이동">네이버</a>
+<a href="https://www.google.co.kr/" target="blank" title="구글로 이동">구글</a>
+
+<ul class="nav01">
+	<li>
+	<a href="http://www.naver.com" target="_self" title="네이버로 이동">menu01</a>
+	</li>
+	<li>
+	<a href="http://www.naver.com" target="_blank" title="네이버로 이동">menu02</a>
+	</li>
+</ul>
+<!--내부링크-->
+<ul class="nav02">
+	<li><a href="#m03">menu03</a></li>
+	<li><a href="#m04">menu04</a></li>
+</ul>
+
+<div id="m03">
+content menu03
+</div>
+
+<div id="m04">
+content menu04
+</div>
+
+</body>
+
+
+
+
+</html>

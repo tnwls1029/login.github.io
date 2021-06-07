@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>홈페이지기본구조01</title>
+<style>
+*{margin:0; padding:0;}
+li {list-style:none;}
+.header {
+	background-color:#6370E6;
+	height:80px;
+}
+.nav {
+	text-align:center;
+}
+.nav ul li{
+	display:inline-block;
+	magin:0 40px;
+	/*background-color:#9974F7;*/
+	width:120px;
+	line-height:70px;
+	text-align:center;
+	color:#fff;
+}
+.main_visual{
+	height:400px;
+	background-color:#79A9FC;
+}
+.main_visual p{
+line-height:400px;
+text-align:center;
+font-size:60px;
+}
+
+.wrap{
+	width:1200px;
+	margin: 0 auto;
+	text-align:center;
+}
+.wrap::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.wrap dl {
+	width:400px;
+	height:400px;
+	background-color: #7CA8C4;
+	float:left;
+	padding:50px;
+	box-sizing:border-box;
+}
+
+.wrap .box02{
+	background-color: #88D0C9;
+}
+
+.wrap .box03{
+	background-color: #ABC1D2;
+}
+
+.wrap dl dt{
+	font-size:35px;
+	margin-bottom:40px;
+}
+.wrap dl dd{
+	font-size:17px;
+}
+
+.footer{
+	height:40px;
+	background-color:#333;
+	text-align:center;
+	line-height:40px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="nav">
+<ul>
+	<li>menu01</li>
+	<li>menu02</li>
+	<li>menu03</li>
+	<li>menu04</li>
+</ul>
+</div>
+</div><!--.header end-->
+<div class="main_visual">
+	<p>메인비주얼</p>
+</div>
+
+<div>
+<div class="wrap">
+	<dl class="box01">
+	<dt>title<dt>
+	<dd>loerem ipsum dolor sit amet.xonsextetuer adipisxing elit</dd>
+	</dl>
+
+	<dl class="box02">
+	<dt>title<dt>
+	<dd>loerem ipsum dolor sit amet.xonsextetuer adipisxing elit</dd>
+	</dl>
+
+	<dl class="box03">
+	<dt>title<dt>
+	<dd>loerem ipsum dolor sit amet.xonsextetuer adipisxing elit</dd>
+	</dl>
+
+</div>
+</div>
+<div class="footer">
+	footer
+</div>
+
+</body>
+</html>

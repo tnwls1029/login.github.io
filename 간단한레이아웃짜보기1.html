@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>홈페이지기본구조01</title>
+<style>
+*{margin:0; padding:0;}
+li {list-style:none;}
+.header {
+	background-color:#6370E6;
+	height:80px;
+}
+.nav {
+	text-align:center;
+}
+.nav ul li{
+	display:inline-block;
+	/*background-color:#9974F7;*/
+	width:120px;
+	line-height:80px;
+	text-align:center;
+}
+.main_visual{
+	height:500px;
+	background-color:#79A9FC;
+}
+.main_visual p{
+line-height:500px;
+text-align:center;
+}
+.content{
+ 	width:1200px;
+	background-color:#6DEEFE;
+	margin:0 auto;
+}
+.content::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.content div{
+	height:400px;
+	float: left; 
+}
+.content .box01{
+	width:600px;
+	background-color:#CEBAFF;
+}
+.content .box02{
+	width:400px;
+	background-color:#6BCFEB;
+}
+.content .box03{
+	width:200px;
+	background-color:#FFBAEB;
+}
+.content .box04{
+	width:1200px;
+	background-color:#9C48E6;
+}
+.footer{
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	background-color:#71B5FF;
+	
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="nav">
+<ul>
+	<li>menu01</li>
+	<li>menu02</li>
+	<li>menu03</li>
+	<li>menu04</li>
+</ul>
+</div>
+</div><!--.header end-->
+<div class="main_visual">
+	<p>메인비주얼</p>
+</div>
+
+<div class="content">
+<div class="box01">box01</div>
+<div class="box02">box02</div>
+<div class="box03">box03</div>
+<div class="box04">box04</div>
+</div><!--.content end-->
+<div class="footer">
+	<p>footer</p>
+</div>
+
+</body>
+</html>

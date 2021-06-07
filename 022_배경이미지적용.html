@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>배경이미지</title>
+<style>
+*{margin:0; padding:0;}
+.bg01 {
+	height: 500px;
+	border: 10px dotted red;
+	padding: 50px;
+	margin: 40px 0;
+	background-image:url('img/img_02.jpg');
+	background-repeat:no-repeat;
+	/**
+	no-repeat 이미지반복없음
+	repeat-x 이미지x축반복
+	repeat-y 이미지y축반복
+	**/
+	background-position: center center;
+	/**
+	배경이미지위치: x y;
+	left, right, top, bottom, center, px, %
+	**/
+
+background-size: cover;
+/**
+배경이미지사이즈 px, %
+contain : 박스안에 이미지가 다 들어갈수 있도록 확대 또는 축소
+cover : 이미지로 박스를 다 덮을 수 있도록 확대 또는 축소
+**/
+}
+.bg02{
+	height: 800px;
+	background: url('img/img_02.jpg')
+	center center / cover no-repeat;
+	background-attachment: pixed;
+/*
+화면스크롤할때 배경이미지 동작
+scroll : 스크롤, fixedf : 고정
+*/
+}
+
+.bg03{
+height: 500px;
+background: url('img/img_02.jpg')
+center center / cover no-repeat;
+}
+
+
+.bg03 p{
+text-align:center;
+font-size:40px;
+line-height: 500px;
+width:500px;
+background-color:rgba(225, 225, 225, .7);
+margin: 0 auto;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="bg01">
+	배경이미지
+</div>
+
+<div class="bg02">
+	배경이미지02
+</div>
+
+<div class="bg03">
+	<p>배경이미지 텍스트 적용</p>	
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>

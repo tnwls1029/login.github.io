@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{
+            list-style:none;
+    }
+        a{
+            text-decoration: none;
+            color:#333;
+            display: block;
+        }
+        .box{
+            width: 300px;
+            border: 1px solid #000;
+            margin: 50px auto;
+        }
+        .box img{
+            width: 100%;
+            transition:1s;
+            
+        }
+        .lotate01:hover img{
+            transform: rotateX(45deg);
+        }
+        .lotate02:hover img{
+            transform: rotateY(45deg);
+        }
+        .lotate03:hover img{
+            transform: rotateZ(45deg);
+        }
+        .lotate04:hover img{
+            transform: rotate(180deg);
+        }
+        .lotate05:hover img{
+                transform: rotate3d(1.2, 2.5, 1.5, 80deg);
+        }
+        .lotate06{transition: 1s;}
+        .lotate06:hover img{
+                transform:rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box lotate01">
+        <img src="img//img02.jpg" alt="샐러드" />
+    </div>
+
+    <div class="box lotate02">
+        <img src="img//img02.jpg" alt="샐러드" />
+    </div>
+
+    <div class="box lotate03">
+        <img src="img//img02.jpg" alt="샐러드" />
+    </div>
+
+    <div class="box lotate04">
+        <img src="img//img02.jpg" alt="샐러드" />
+    </div>
+
+    <div class="box lotate05">
+        <img src="img//img02.jpg" alt="샐러드" />
+    </div>
+
+    <div class="box lotate06">
+        <img src="img//img02.jpg" alt="샐러드" />
+    </div>
+</body>
+</html>
